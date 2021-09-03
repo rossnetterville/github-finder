@@ -13,8 +13,6 @@ const User = ({user, loading, getUser, getUserRepos, repos, match}) => {
         // eslint-disable-next-line
     }, [])
     
-
-
         const {
             name, 
             avatar_url, 
@@ -29,7 +27,6 @@ const User = ({user, loading, getUser, getUserRepos, repos, match}) => {
             public_gists,
             company, 
             hireable} = user
-
 
         if(loading) return <Spinner />
         return (
